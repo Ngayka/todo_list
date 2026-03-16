@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My site</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            display: flex
+            }
+         .sidebar {
+            width: 200px;
+             background: #f4f4f4;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+      </style>
+</head>
+<body>
+    <div class="sidebar">
+    <h3>Menu</h3>
+
+    <a href="{% url 'tasks:task_list' %}">Home</a>
+    <a href="{% url 'tags:tag_list' %}">Tags</a>
+
+    </div>
+
+    <div class="content">
+    {% block content %}
+    {% endblock %}
+    </div>
+</body>
+</html>

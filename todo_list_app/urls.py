@@ -17,10 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework import routers
-from todo_list_app import urls
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("tasks.urls", namespace="tasks")),
+    path("tasks/", include("tasks.urls", namespace="tasks")),
+    path("tags/", include("tags.urls", namespace="tags"))
 ]

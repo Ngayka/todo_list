@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %} Todo list {% endblock %}
+
+{% block content %}
+<h1>Tasks</h1>
+    <a href="{% url 'tasks:task_create' %}">Add Task</a>
+    <ul>
+        {% for task in tasks %}
+        <li>
+            {{ task.content }}
+            {% if task.its_done %}(Done){% endif %}
+            <a href="{% url 'tasks:task_update' task.id %}">Edit</a>
+            <a href="{% url 'tasks:task_delete' task.id %}">Delete</a>
+            {% if not task.its_done %} <form action="{% url 'tasks:task_toggle' task.id %}" method="post" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit">Complete</button>
+                </form>
+            {% else %}
+                <form action="{% url 'tasks:task_toggle' task.id %}" method="post" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit">Undo</button>
+                </form>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
