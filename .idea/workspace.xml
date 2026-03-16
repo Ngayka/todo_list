@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0769a9a1-e212-4a20-b49c-ea2b4d89ca97" name="Changes" comment="create tags app, add html templates for all enpoints" />
+    <list default="true" id="0769a9a1-e212-4a20-b49c-ea2b4d89ca97" name="Changes" comment="black formate">
+      <change afterPath="$PROJECT_DIR$/tags/templates/tags/tag_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tags/templates/tags/tag_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/tags/templates/tags/tag_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tags/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tags/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,12 +93,21 @@
       <option name="project" value="LOCAL" />
       <updated>1773680375648</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="black formate">
+      <option name="closed" value="true" />
+      <created>1773680540763</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773680540763</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create tags app, add html templates for all enpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="create tags app, add html templates for all enpoints" />
+    <MESSAGE value="black formate" />
+    <option name="LAST_COMMIT_MESSAGE" value="black formate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

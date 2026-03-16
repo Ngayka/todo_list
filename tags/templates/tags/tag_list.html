@@ -9,6 +9,7 @@
         {% for tag in tags %}
         <li>
             {{ tag.name }}
+            <a href="{% url 'tags:tag_update' tag.id %}">Edit</a>
             <a href="{% url 'tags:tag_delete' tag.id %}">Delete</a>
         </li>
         {% endfor %}
