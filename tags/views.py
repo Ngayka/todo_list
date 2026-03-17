@@ -1,6 +1,6 @@
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView, ListView, UpdateView
-from .models import Tag
+from tags.models import Tag
 
 
 class TagListView(ListView):
